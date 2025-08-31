@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robocon 2026 Registration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Subtle animated gradient background */
+    body {
+      background: linear-gradient(-45deg, #1e293b, #111827, #1e3a8a, #0f172a);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body class="text-white">
+<header class="fixed w-full bg-gray-900/80 backdrop-blur-md z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    
+    <!-- College Logo on Left -->
+    <div class="flex items-center space-x-3">
+      <!-- Increase h-12 to h-16 or h-20 for bigger logo -->
+      <img src="https://adypu.edu.in/wp-content/themes/adypu/images/logo.png" alt="College Logo" class="h-20 w-auto object-contain">
+      <span class="text-white text-2xl font-extrabold tracking-wide">
+        AJEENKYA DY PATIL SCHOOL OF ENGINEERING(SPPU)
+      </span>
+    </div>
+
+    <!-- Title on Right -->
+    <h1 class="text-indigo-300 text-xl font-semibold tracking-wider">
+      
+    </h1>
+  </div>
+</header>
+
+   <!-- HERO SECTION -->
+  <section class="h-screen flex items-center justify-center text-center px-4">
+    <div>
+    <p style="font-size: 40px;"><b>TEAM VERTEX </b></p>
+     <div class="w-50 h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mx-auto mb-6 rounded-full"></div>
+
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Welcome to Robocon 2026</h2>
+      <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+         <b>THE FUSION OF KUNG FU AND ROBOTICS...</b><br>
+        Join us in the journey of innovation, creativity, and teamwork.
+      </p>
+      <a href="#register" class="bg-indigo-600 hover:bg-indigo-700 px-8 py-3 rounded-lg font-semibold">
+        Register Now
+      </a>
+    </div>
+  </section>
+<!-- REGISTRATION SECTION -->
+<section id="register" class="relative py-20 bg-gray-900 text-white overflow-hidden">
+  <!-- Particle Background -->
+  <div id="particles-js" class="absolute inset-0 -z-10"></div>
+
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Registration Form</h2>
+
+    <form action="https://formspree.io/f/xqadbqdk" method="POST"
+          class="bg-gray-800/80 backdrop-blur-md shadow-xl rounded-2xl p-8 space-y-6 relative z-10">
+
+      <!-- Full Name -->
+      <div>
+        <label class="block text-sm font-medium mb-2">Full Name</label>
+        <input type="text" name="fullname" required
+               class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-indigo-500">
+      </div>
+    
+      <!-- Enrollment Number -->
+      <div>
+        <label class="block text-sm font-medium mb-2"> Enrollment Number</label>
+        <input type="text" name="enrollmentnumber" required
+               class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-indigo-500">
+      </div>
+
+
+      <!-- Email -->
+      <div>
+        <label class="block text-sm font-medium mb-2">Email Address</label>
+        <input type="email" name="email" required
+               class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-indigo-500">
+      </div>
+
+      <!-- Phone -->
+      <div>
+        <label class="block text-sm font-medium mb-2">Phone Number</label>
+        <input type="tel" name="phone" required
+               class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-indigo-500">
+      </div>
+
+      <!-- Gender -->
+      <div>
+        <label class="block text-sm font-medium mb-2">Gender</label>
+        <select name="gender"
+                class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600">
+          <option value="">Select</option>
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <!-- Branch -->
+      <div>
+        <label class="block text-sm font-medium mb-2">Branch</label>
+        <select name="branch"
+                class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600">
+          <option value="">Select</option>
+          <option>ENTC</option>
+          <option>COMP</option>
+          <option>AIDS</option>
+          <option>MECH</option>
+          <option>CIVIL</option>
+       </select>
+      </div>
+
+      <!-- Year -->
+      <div>
+        <label class="block text-sm font-medium mb-2">College Year</label>
+        <select name="year"
+                class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600">
+          <option value="">Select</option>
+          <option>First Year</option>
+          <option>Second Year</option>
+          <option>Third Year</option>
+          <option>Final Year</option>
+        </select>
+      </div>
+
+      <!-- Domains -->
+      <div>
+        <label class="block text-sm font-medium mb-2">Domain(s)</label>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" name="domain" value="Electronics and hardware" class="accent-indigo-500">
+            <span>Electronics and hardware</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" name="domain" value="Automation & Programming" class="accent-indigo-500">
+            <span>Automation & Programming</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" name="domain" value="ROS" class="accent-indigo-500">
+            <span>ROS</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" name="domain" value="Structural design CAD/CAM" class="accent-indigo-500">
+            <span>Structural design CAD/CAM</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" name="domain" value="Image Processing" class="accent-indigo-500">
+            <span>Image Processing</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" name="domain" value="MATLAB and ANSYS Simulation" class="accent-indigo-500">
+            <span>MATLAB and ANSYS Simulation</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" name="domain" value="Documentation" class="accent-indigo-500">
+            <span>Documentation</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" name="domain" value="Research and development" class="accent-indigo-500">
+            <span>Research and development</span>
+          </label>
+          <label class="flex items-center space-x-2">
+            <input type="checkbox" name="domain" value="Machine Learning" class="accent-indigo-500">
+            <span>Machine Learning</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Self Description -->
+      <div>
+        <label class="block text-sm font-medium mb-2">
+          Could you describe yourself and share your experiences in the domains you have selected, along with what unique skills and contributions you can bring to the team for Robocon?
+        </label>
+        <textarea name="description" rows="5"
+                  class="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:ring-2 focus:ring-indigo-500"></textarea>
+      </div>
+
+      <!-- Submit -->
+      <div class="text-center">
+        <button type="submit"
+                class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition transform hover:scale-110 hover:shadow-xl">
+          Join Our Team
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- Particle Script -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+<script>
+  tsParticles.load("particles-js", {
+    background: { color: "transparent" },
+    particles: {
+      number: { value: 65 },
+      color: { value: ["#6366f1", "#22d3ee", "#a855f7"] },
+      shape: { type: ["circle", "square", "character"], 
+               character: {
+                 value: ["⚙️", "🤖", "🔧"], // Tech floating icons
+                 font: "Verdana",
+                 style: "",
+                 weight: "400"
+               }},
+      opacity: { value: 0.6 },
+      size: { value: { min: 8, max: 16 }, animation: { enable: true, speed: 3, minimumValue: 6 } },
+      move: { enable: true, speed: 2, direction: "none", outModes: "out" },
+      links: { enable: true, color: "#6366f1", distance: 120, opacity: 0.3 }
+    },
+    interactivity: {
+      events: { onHover: { enable: true, mode: "repulse" } },
+      modes: { repulse: { distance: 80 } }
+    }
+  });
+</script>
+ <!-- PROBLEM STATEMENT + YOUTUBE -->
+  <section class="py-20 bg-gray-900 text-center">
+    <div class="max-w-3xl mx-auto px-4 space-y-12">
+
+      <!-- Problem Statement Card -->
+      <div class="bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col items-center space-y-4">
+        <div class="bg-indigo-600 w-16 h-16 flex items-center justify-center rounded-full shadow-md">
+          📄
+        </div>
+        <h2 class="text-2xl font-bold">Problem Statement</h2>
+        <p class="text-gray-300 max-w-md">
+          Download the official problem statement for Robocon 2026 and understand the challenge we will be solving.
+        </p>
+        <a href="C:\Users\parth\OneDrive\Desktop\20250821143202_1197239195.pdf" target="_blank"
+           class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold inline-block transition">
+          Download PDF
+        </a>
+      </div>
+
+      <!-- YouTube Video -->
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Robocon Intro Video</h2>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe class="w-full h-96 rounded-lg shadow-lg"
+                  src="https://www.youtube.com/embed/R9sRH5YIItM?si=5PkjgkRp-okIXs_z
+"
+                  title="YouTube video"
+                  frameborder="0"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 bg-gray-950 text-center text-gray-400">
+    © 2026 Robocon | All Rights Reserved
+  </footer>
+</body>
+</html>
